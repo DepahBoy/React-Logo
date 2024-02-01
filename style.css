@@ -1,0 +1,47 @@
+
+
+:root{
+    --primary : #61DBFB;
+
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:rgb(15, 15, 37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.react {
+   border: solid var(--primary) 15px;
+   width: 515px;
+   height: 185px; 
+   border-radius: 50%;
+   position: relative;
+   background: radial-gradient(circle at 50%, var(--primary) 15%, transparent 15.4%); /*the center*/
+}
+
+.react::before, .react::after {
+    width: 515px;
+    height: 185px;
+    border: solid var(--primary) 15px;
+    border-radius: 50%;
+    display: block;
+    content: "";
+    position: absolute;
+    top : -15px;
+    left: -15px;
+    rotate: 60deg;
+}
+
+.react::after{
+    rotate: -60deg;
+}
