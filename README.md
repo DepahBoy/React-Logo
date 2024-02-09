@@ -1,3 +1,3 @@
 # React-Logo
 Create a React logo with a single div
-click here : https://fullstack-techboy.github.io/React-Logo/
+Click here : https://depahboy.github.io/React-Logo/
